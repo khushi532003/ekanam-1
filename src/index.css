@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+}
+
+@font-face {
+  font-family: 'Lavish';
+  src: url('/fonts/Lavish.ttf');
+}
+
+
+.interface{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  font-family: 'Lavish';
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-text {
+  position: relative;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  z-index: 9;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+    font-family: 'Lavish';
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in forwards;
+  animation-delay: 1s; /* Start after 1s */
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-out forwards;
+}
+

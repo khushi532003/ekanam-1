@@ -35,10 +35,10 @@ function InitialPhase() {
     const currentZ = camera.position.z;
     setCameraZ(currentZ);
 
-    console.log(currentZ);
+    // console.log(currentZ);
     
 
-    console.log("Current phase:", currentPhase);
+    // console.log("Current phase:", currentPhase);
 
 
     // Rotation easing

@@ -46,8 +46,8 @@ export default Background;
 //     <>
 //       <Environment
 //       background
-//       files={'/envMaps/1/bg.jpg'}
-//       // preset='night'
+//       // files={'/envMaps/1/bg.jpg'}
+//       preset='night'
 //       />
 //     </>
 //   )

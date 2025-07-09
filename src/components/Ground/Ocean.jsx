@@ -6,7 +6,7 @@ import { TextureLoader } from "three";
 import { useControls } from "leva";
 
 export default function Ocean() {
-  const ref = useRef(); 
+  const ref = useRef();
   const planeRef = useRef();
   const { camera } = useThree();
 

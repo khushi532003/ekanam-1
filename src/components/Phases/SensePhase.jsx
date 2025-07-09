@@ -12,7 +12,7 @@ import Bird from "../Sounds/Bird";
 import Butterfly from "../Effects/Butterfly";
 import { Cloud, Sparkles } from "@react-three/drei";
 import Plants from "../InitialPhase/Plants";
-import Rock from "../InitialPhase/Rock";
+// import Rock from "../InitialPhase/Rock";
 import Model from "../FeelPhase/Model";
 
 
@@ -34,8 +34,8 @@ export default function SensePhase({ position, rotation, targetReached }) {
       <Ocean />
       <Bridge />
       <Model />
-      <Rock position={[-20, -8.1, 10]} scale={3} rotation={[0, Math.PI / 4, 0]} />
-      <Rock position={[42, -8, -65]} scale={2.5} rotation={[0, Math.PI , 0]} />
+      {/* <Rock position={[-20, -8.1, 10]} scale={3} rotation={[0, Math.PI / 4, 0]} />
+      <Rock position={[42, -8, -65]} scale={2.5} rotation={[0, Math.PI , 0]} /> */}
       <Tree position={[-110, 0, 40]} scale={17} rotation={[0, Math.PI / 4, 0]} />
       <Tree position={[-110, 0, 50]} scale={17} rotation={[0, Math.PI / 4, 0]} />
       <WaterSound />

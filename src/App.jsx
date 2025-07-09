@@ -3,6 +3,7 @@ import Entrance from "./pages/Entrance";
 import Loader from "./components/Loader";
 import { Suspense, useState } from "react";
 import Interface from "./pages/Interface";
+import Progress from "./components/Progress/Progress";
 
 function App() {
   const cameraSettings = {
@@ -20,16 +21,14 @@ function App() {
 
       {!loading && (
         <>
-          <Canvas shadows camera={cameraSettings}
-           fog={{ color: '#d0e0f0', near: 10, far: 2 }}
-          >
-            <Suspense fallback={null}>
-              <Entrance />
+          <Canvas shadows camera={cameraSettings}>
+            <Suspense fallback={<Progress />}>
+              {!loading ? <Entrance /> : null}
             </Suspense>
           </Canvas>
-          <Interface/>
+          <Interface />
         </>
-     )} 
+      )}
     </>
   );
 }

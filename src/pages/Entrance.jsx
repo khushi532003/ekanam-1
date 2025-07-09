@@ -7,14 +7,14 @@ import Background from "../components/Background";
 function Entrance() {
   return (
     <>
-      <CameraController  />
+      <CameraController />
       <OrbitControls />
-      <Background />  
+      <Background />
       <Sparkles count={1000} size={3} scale={50} position={[0, -8, -50]} color="gold" blending="Additive" />
       <InitialPhase />
       <Lights />
     </>
   );
-} 
+}
 
 export default Entrance;

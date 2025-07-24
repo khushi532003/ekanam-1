@@ -10,9 +10,9 @@ export default function CameraController({ resettingCamera }) {
   useEffect(() => {
     const handleWheel = (event) => {
       // ✅ Clamp scroll only if not too far
-       if (event.deltaY > 0) {
+       if (event.deltaY < 0) {
       if (position.current.z > -250 && !resettingCamera) {
-        scrollDeltaRef.current += event.deltaY * 0.020;
+        scrollDeltaRef.current -= event.deltaY * 0.020;
       }
     }
     };

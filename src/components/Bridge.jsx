@@ -46,7 +46,7 @@ export default function Bridge() {
         scale={30.5}
         geometry={boxGeometry}
       >
-        <meshStandardMaterial
+        <meshBasicMaterial
           color={"[1.9, 1.9, 1.9]"} // Lower intensity to reduce bloom artifacts
           roughness={0.5}
           metalness={0.1}

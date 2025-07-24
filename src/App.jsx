@@ -4,6 +4,7 @@ import Loader from "./components/Loader";
 import { Suspense, useState } from "react";
 import Interface from "./pages/Interface";
 import Progress from "./components/Progress/Progress";
+import { Html } from "@react-three/drei";
 
 function App() {
   const cameraSettings = {
@@ -22,7 +23,10 @@ function App() {
       {!loading && (
         <>
           <Canvas shadows camera={cameraSettings}>
-            <Suspense fallback={<Progress />}>
+            <Suspense fallback={ <Html>
+              <img src="/textures/lotus-blossom.gif" alt="Lotus" />
+             <p className="text-white"> Loading... </p>
+           </Html>}>
               {!loading ? <Entrance /> : null}
             </Suspense>
           </Canvas>

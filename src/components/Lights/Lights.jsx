@@ -17,7 +17,7 @@ function Lights() {
 
 
     })
-    const { sunX, sunY, sunZ, intensity } = useControls({
+    const { sunX, sunY, sunZ } = useControls({
         sunX: 40, sunY: -400, sunZ: -600,
         //   intensity: { value: 2, min: 0, max: 10 },
     });
@@ -37,7 +37,7 @@ function Lights() {
                 shadow-camera-top={100}
                 shadow-camera-bottom={-100}
             />
-            <ambientLight intensity={2} />
+            <ambientLight intensity={1.5} />
         </>
     )
 }
